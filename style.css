@@ -1,0 +1,53 @@
+.step {
+    /* for demo */
+    margin: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content:center;
+  }
+  
+  .step__items {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    /* float: left; */
+    list-style: none;
+    /* padding-left: 22%; */
+    padding: 10px 40px;
+  }
+
+  .step__items > label {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .step__items > input {
+    align-self: center;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .order, .delivery, .payment {
+    position: absolute;
+    display: none;
+    width: 100%;
+    /* margin: auto; */
+    height: auto;
+    top: 100px;
+    left: 0;
+  }
+
+  .step__items input[id=order]:checked ~ .order{
+    display: block;
+  }
+  
+  .step__items input[id="delivery"]:checked ~ .delivery{
+    display: block;
+  }
+  
+  .step__items  input[id="payment"]:checked ~ .payment{
+    display: block;
+  }
+
+  

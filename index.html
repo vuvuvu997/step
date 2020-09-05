@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="orderstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="deliverystyle.css">
+    <link rel="stylesheet" href="paymentstyle.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <div id="over" class="over">
+    <nav class="menu-cart" >
+        <ul class="menu-cart__1">
+            <li class="menu-cart__item menu-cart__item--clothing">
+                <a href="#"><i>CLOTHING</i></a>
+            </li>
+            <li class="menu-cart__item">
+            <a href="#">New</a>
+            </li>
+            <li class="menu-cart__item">
+                <a href="#">Men</a>
+            </li>
+            <li class="menu-cart__item">
+                <a href="#">Women</a>
+            </li>
+            <li class="menu-cart__item">
+                <a href="#">Kids</a>
+            </li>
+            <li class="menu-cart__item active">
+                <a href="#">Special Offers</a>
+            </li>
+        </ul>
+        <ul class="menu-cart__2">    
+            <li class="menu-cart__item--mycart">
+                <a href="#"><i class='fas fa-shopping-cart'></i></a> 
+                <div>
+                    <h5>My Cart</h5>
+                    <button id="btn-mycart">3 Items</button>
+                </div>
+                <ul id="display-cart" class="menu-cart__item__myproduct">
+                    <li>
+                        <div class="contain-cart__item__order__1__1">
+                            <img src="https://loremflickr.com/80/128" />
+                            <div class="contain-cart__item__order__1__1__info">
+                                <h4>Lorem, ipsum dolor.</h4>
+                                <p>Color: <span><b>Red/White</b></span></p>
+                                <p>Size: <span>L</span></p>
+                            </div>
+                            <div class="contain-cart__item__order__1__1__monney">
+                                <span>$45.00</span>
+                                <span>$55.00</span>
+                            </div>
+                        </div>
+                        <div class="style-hr"></div>
+                    </li>
+                    <li>
+                        <div class="contain-cart__item__order__1__1">
+                            <img src="https://loremflickr.com/80/128" />
+                            <div class="contain-cart__item__order__1__1__info">
+                                <h4>Lorem, ipsum dolor.</h4>
+                                <p>Color: <span><b>Red/White</b></span></p>
+                                <p>Size: <span>L</span></p>
+                            </div>
+                            <div class="contain-cart__item__order__1__1__monney">
+                                <span>$45.00</span>
+                                <span>$55.00</span>
+                            </div>
+                        </div>
+                        <div class="style-hr"></div>
+                    </li>
+                    <li>
+                        <div class="contain-cart__item__order__1__1">
+                            <img src="https://loremflickr.com/80/128" />
+                            <div class="contain-cart__item__order__1__1__info">
+                                <h4>Lorem, ipsum dolor.</h4>
+                                <p>Color: <span><b>Red/White</b></span></p>
+                                <p>Size: <span>L</span></p>
+                            </div>
+                            <div class="contain-cart__item__order__1__1__monney">
+                                <span>$45.00</span>
+                                <span>$55.00</span>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </li>
+            <li class="button menu-cart__item--signup">
+                <a href="#">Sign up</a>
+            </li>
+            <li class="button menu-cart__item--signin">
+                <a href="#">Log In</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="contain-cart">
+        <div>
+            <h1>Checkout steps</h1>
+            <ul class="step">
+                <li class="step__items">
+                    <input type="radio" name="items" id="order"><br>
+                    <label for="order">Order</label>
+                    <div class="order"">
+                        <div class="contain-cart__item">
+                            <div class="contain-cart__item__order">
+                                <h3>Order</h3>
+                                <div class="contain-cart__item__order__1">
+                                    <div class="contain-cart__item__order__1__1">
+                                        <img src="https://loremflickr.com/80/128" />
+                                        <div class="contain-cart__item__order__1__1__info">
+                                            <h4>Lorem, ipsum dolor.</h4>
+                                            <p>Color: <span><b>Red/White</b></span></p>
+                                             <p>Size: <span>L</span></p>
+                                        </div>
+                                        <div class="contain-cart__item__order__1__1__monney">
+                                            <span>$45.00</span>
+                                            <span>$55.00</span>
+                                        </div>
+                                        <div class="contain-cart__item__order__1__1__quantity">
+                                            <span>Quanlity:</span>
+                                            <input type="number" id="quantity" name="quantity" value="1" min="1" max="5">
+                                            <span>L</span>
+                                        </div>
+                                    </div>
+                                    <div class="style-hr"></div>
+                                    <div class="contain-cart__item__order__1__1">
+                                        <img src="https://loremflickr.com/80/128" />
+                                        <div class="contain-cart__item__order__1__1__info">
+                                            <h4>Lorem, ipsum dolor.</h4>
+                                            <p>Color: <span><b>Red/White</b></span></p>
+                                             <p>Size: <span>L</span></p>
+                                        </div>
+                                        <div class="contain-cart__item__order__1__1__monney">
+                                            <span>$45.00</span>
+                                            <span>$55.00</span>
+                                        </div>
+                                        <div class="contain-cart__item__order__1__1__quantity">
+                                            <span>Quanlity:</span>
+                                            <input type="number" id="quantity" name="quantity" value="1" min="1" max="5">
+                                            <span>L</span>
+                                        </div>
+                                    </div>
+                                    <div class="style-hr"></div>
+                                    <div class="contain-cart__item__order__1__1">
+                                        <img src="https://loremflickr.com/80/128" />
+                                        <div class="contain-cart__item__order__1__1__info">
+                                            <h4>Lorem, ipsum dolor.</h4>
+                                            <p>Color: <span><b>Red/White</b></span></p>
+                                             <p>Size: <span>L</span></p>
+                                        </div>
+                                        <div class="contain-cart__item__order__1__1__monney">
+                                            <span>$45.00</span>
+                                            <span>$55.00</span>
+                                        </div>
+                                        <div class="contain-cart__item__order__1__1__quantity">
+                                            <span>Quanlity:</span>
+                                            <input type="number" id="quantity" name="quantity" value="1" min="1" max="5">
+                                            <span>L</span>
+                                        </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div style="width: 5%;"></div>
+                            <div class="contain-cart__item__payment">
+                                <h3>Payment Summary</h3>
+                                <div class="contain-cart__item__payment__1">
+                                    <h4>UNREGISTERES ACCOUT</h4>
+                                    <p>Transaction code <span>VC11565</span></p>
+                                    <div class="contain-cart__item__payment__1__div">
+                                        <input type="text" placeholder="COUPON CODE">
+                                        <button>Apply</button>
+                                    </div>
+                                    <div class="style-hr"></div>
+                                    <p>Order Sumary <span>$112</span></p>
+                                    <p>Additional Service <span>$10</span></p>
+                                    <p>Total Amount <span>$132</span></p>
+                                    <div class="style-hr"></div>
+                                    <p id="contain-cart__item__payment__1__last">SALE EXPIRING IN: <span>21 HOURS, 31 MINUTES</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="step__items">
+                  <input type="radio" name="items" id="delivery"><br>
+                  <label for="delivery">Delivery</label>
+                  <div class="delivery">
+                    <div class="delivery-contain">
+                        <div class="delivery-contain__item">
+                            <h3>Delivery</h3>
+                            <div class="delivery-contain__item__1">
+                                <div class="delivery-contain__item__1__1">
+                                    <div class="delivery-contain__item__1__1__checkbox">
+                                        <input type="radio" name="check" id="check1">
+                                    </div>
+                                    <div id="check1-div" class="delivery-contain__item__1__1__detail">
+                                        <div class="col-4 delivery-contain__item__1__1__detail_1">
+                                            <i class='fab fa-amazon'></i>
+                                            <span>dpd</span>
+                                        </div>
+                                        <div class="col-5 delivery-contain__item__1__1__detail_2">
+                                            <h4>DPD Deliveries</h4>
+                                            <p>Exprected delivery:</p>
+                                            <p>Friday: 28</p>
+                                        </div>
+                                        <div class="col-3 delivery-contain__item__1__1__detail_3">
+                                            <span>$5.25</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="delivery-contain__item__1__1">
+                                    <div class="delivery-contain__item__1__1__checkbox">
+                                        <input type="radio" name="check" id="check">
+                                        <div class="checkbox"></div>
+                                    </div>
+                                    <div class="delivery-contain__item__1__1__detail">
+                                        <div class="col-4 delivery-contain__item__1__1__detail_1">
+                                            <i class='fab fa-amazon'></i>
+                                            <span>dpd</span>
+                                        </div>
+                                        <div class="col-5 delivery-contain__item__1__1__detail_2">
+                                            <h4>DPD Deliveries</h4>
+                                            <p>Exprected delivery:</p>
+                                            <p>Friday: 28</p>
+                                        </div>
+                                        <div class="col-3 delivery-contain__item__1__1__detail_3">
+                                            <span>$5.25</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="delivery-contain__item__1__1">
+                                    <div class="delivery-contain__item__1__1__checkbox">
+                                        <input type="radio" name="check" id="check">
+                                        <div class="checkbox"></div>
+                                    </div>
+                                    <div class="delivery-contain__item__1__1__detail">
+                                        <div class="col-4 delivery-contain__item__1__1__detail_1">
+                                            <i class='fab fa-amazon'></i>
+                                            <span>dpd</span>
+                                        </div>
+                                        <div class="col-5 delivery-contain__item__1__1__detail_2">
+                                            <h4>DPD Deliveries</h4>
+                                            <p>Exprected delivery:</p>
+                                            <p>Friday: 28</p>
+                                        </div>
+                                        <div class="col-3 delivery-contain__item__1__1__detail_3">
+                                            <span>$5.25</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="delivery-contain__item__1__1">
+                                    <div class="delivery-contain__item__1__1__checkbox">
+                                        <input type="radio" name="check" id="check">
+                                        <div class="checkbox"></div>
+                                    </div>
+                                    <div class="delivery-contain__item__1__1__detail">
+                                        <div class="col-4 delivery-contain__item__1__1__detail_1">
+                                            <i class='fab fa-amazon'></i>
+                                            <span>dpd</span>
+                                        </div>
+                                        <div class="col-5 delivery-contain__item__1__1__detail_2">
+                                            <h4>DPD Deliveries</h4>
+                                            <p>Exprected delivery:</p>
+                                            <p>Friday: 28</p>
+                                        </div>
+                                        <div class="col-3 delivery-contain__item__1__1__detail_3">
+                                            <span>$5.25</span> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            <div>
+                                <h3><a href="#">Payment</a></h3>
+                            </div>   
+                        </div>
+                        <div class="delivery-contain__service">
+                            <h3>Additional Service</h3>
+                            <div class="delivery-contain__service__1">
+                                <div class="delivery-contain__service__1__1">
+                                    <h4>Care+ Package</h4>
+                                    <p>One year of addtional care</p>
+                                </div>
+                                <div class="delivery-contain__service__1__2">
+                                    <span>$10.00</span>
+                                </div>
+                                <div class="custom-checkbox"> 
+                                    <label for="checkbox1" class="switch">
+                                        <input type="checkbox" id="checkbox1">
+                                        <div class="slider"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="delivery-contain__service__1">
+                                <div class="delivery-contain__service__1__1">
+                                    <h4>Care+ Package</h4>
+                                    <p>One year of addtional care</p>
+                                </div>
+                                <div class="delivery-contain__service__1__2">
+                                    <span>$10.00</span>
+                                </div>
+                                <div class="custom-checkbox"> 
+                                    <label for="checkbox2" class="switch">
+                                        <input type="checkbox" id="checkbox2">
+                                        <div class="slider"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="delivery-contain__service__1">
+                                <div class="delivery-contain__service__1__1">
+                                    <h4>Care+ Package</h4>
+                                    <p>One year of addtional care</p>
+                                </div>
+                                <div class="delivery-contain__service__1__2">
+                                    <span>$10.00</span>
+                                </div>
+                                <div class="custom-checkbox"> 
+                                    <label for="checkbox3" class="switch">
+                                        <input type="checkbox" id="checkbox3">
+                                        <div class="slider round"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="step__items">
+                  <input type="radio" name="items" id="payment"><br>   
+                  <label for="payment">Payment</label>
+                  <div class="payment">
+                    <form class="form-contain" action="#" method="GET">
+                        <h1>Payment Details</h1>
+                        <div class="form-contain__name-cart">
+                            <label for="name-cart">Name on cart</label><br>
+                            <input type="text" id="name-cart" name="name-cart">
+                        </div>
+                        <div class="form-contain__number-cart">
+                            <label for="number-cart">Number on cart</label><br>
+                            <input type="text" id="number-cart" name="number-cart">
+                        </div>
+                        <div class="form-contain__last">
+                            <div class="form-contain__last__expiration">
+                                <label for="expiration">Expiration</label><br>
+                                <input type="text" name="month">
+                                <span>/</span>
+                                <input type="text" name="day">
+                            </div>
+                            <div class="form-contain__last__cvc">
+                                <label for="cvc">CVC <a href="#"><i class='fas fa-info-circle'></i></a> </label>
+                                <input type="text" name="cvc" id="cvc">
+                            </div>
+                        </div>
+                        <div class="form-contain__button">
+                            <button>Review Order</button>
+                        </div>
+                    </form>
+                  </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        let btn = document.getElementById('btn-mycart');
+        let menucart = document.getElementById('display-cart');
+        let state = false;
+        btn.addEventListener('click', () =>{
+            if( state === false ) {
+                menucart.style.display = 'block';
+                state = true;
+            } else {
+                menucart.style.display = 'none';
+                state = false;
+            }
+        });
+
+        let over = document.getElementById('over')
+        window.onclick = function(event) {
+            if (event.target == over) {
+                menucart.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

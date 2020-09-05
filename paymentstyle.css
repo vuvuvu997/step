@@ -1,0 +1,101 @@
+.form-contain {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+}
+
+.form-contain label {
+    font-weight: bold;
+    color: #888;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.form-contain > h1 {
+    text-align: left;
+    margin-top: 0;
+}
+
+.form-contain a {
+    color: #888;
+}
+
+.form-contain input {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    border: 0;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.form-contain {
+    max-width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 50px 100px 50px 50px;
+    border: 1px solid #888; 
+}
+.form-contain form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-contain__name-cart {
+    margin-bottom: 30px;
+}
+
+.form-contain__number-cart {
+    margin-bottom: 30px;
+}
+
+.form-contain__last {
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+}
+
+.form-contain__last__expiration {
+    width: 40%;
+}
+
+.form-contain__last__expiration input {
+    width: 30%;
+} 
+
+.form-contain__last__expiration span {
+    font-weight: bold;
+    margin: 0px 15px;
+}
+
+.form-contain__last__cvc {
+    width: 60%;
+}
+
+.form-contain__last__cvc > label > i {
+    margin-left: 10px;
+}
+
+.form-contain input:focus {
+    outline: none;
+}
+
+.form-contain__button {
+    margin: 50px 0;
+}
+
+.form-contain__button > button {
+    border: 0px;
+    width: 40%;
+    height: 60px;
+    background-color: rgb(8, 156, 255);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,191 @@
+.delivery-contain p, h4, h3 {
+    text-align:left;
+    padding: 0;
+    margin: 0;
+}
+.delivery-contain h3 {
+    text-align:left;
+    font-size: 30px;
+    padding: 20px 0;
+}
+.delivery-contain a {
+    text-decoration: none;
+    color: black;
+}
+
+.delivery-contain {
+    display: flex;
+    max-width: 100%;
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+}
+
+.delivery-contain__item {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.delivery-contain__item__1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 100%;
+}
+
+.delivery-contain__item__1__1 {
+    display: flex;
+    width: 90%;
+    margin: 0px 10% 0px 0px;
+}
+
+.delivery-contain__item__1__1__checkbox {
+    width: 10%;
+    align-self: center;
+}
+
+.delivery-contain__item__1__1__checkbox > input {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.delivery-contain__item__1__1__detail {
+    display: flex;
+    width: 90%;
+    float: right;
+    padding: 20px 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.delivery-contain__item__1__1__detail_1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+}
+
+.delivery-contain__item__1__1__detail_2 {
+    font-size: 20px;
+}
+
+.delivery-contain__item__1__1__detail_2 p {
+    text-align:left;
+    color: #aaa;
+}
+
+.delivery-contain__item__1__1__detail_3 {
+    align-self: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* 
+.delivery-contain__item__1__1__checkbox input:checked */
+.delivery-contain__item__1__1__detail {
+    border: 3px solid rgb(57, 198, 253);
+}
+
+.delivery-contain__service {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.delivery-contain__service__1 {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    padding: 20px;
+    margin: 10px 0px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.delivery-contain__service__1__1 {
+    width: 70%;
+}
+
+.delivery-contain__service__1__1  p {
+    color: #888;
+}
+
+.delivery-contain__service__1__2 {
+    width: 15%;
+    align-self: center;
+    font-weight: bold;
+}
+
+.custom-checkbox {
+    max-width: 15%;
+    align-self: center;
+    margin-left: 15px;
+}
+
+.switch {
+    display: inline-block;
+    height: 20px;
+    position: relative;
+    width: 40px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    background-color: rgb(209, 208, 208);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider::before {
+    background-color: rgb(255, 255, 255);
+    bottom: 2px;
+    content: "";
+    height: 18px;
+    left: 2px;
+    position: absolute;
+    transition: .4s;
+    width: 18px;
+}
+
+.custom-checkbox input:checked + .slider {
+    background-color: rgb(181, 232, 255);
+}
+
+.custom-checkbox input:checked + .slider::before {
+    background-color: rgb(52, 183, 243);
+}
+
+.custom-checkbox input:checked + .slider::before {
+    transform: translateX(18px);
+}
+
+.slider {
+    border-radius: 10px;
+}
+
+.slider::before {
+    border-radius: 50%;
+}
